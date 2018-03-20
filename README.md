@@ -44,8 +44,9 @@ The variable ```C1``` includes the MARTINI BB beads of residues at the dimerizat
 Variable ```C2``` includes a group of atoms colinear along the *x*-axis with ```C1```. The centers of these groups will be used later to define a vector normal to the lipid-protein interface plane. The other two variables indicate the limit of the interface along the *y*-axis. 
 
 <p align="center">
-  <img src='./Figure/Fig1.png' />
+	<img src='./Figure/Fig1.png' /><br />
+	The points, shaded circle, and the triangle are used just as references,<br /> 
+	they do not correspond to the exact location of the atom group centers, for that use VMD.<br /> 
 </p>
-<p align="center">The points, shaded circle, and the triangle are used just as references, they do not correspond to the exact location of the atom group centers, for that use VMD. <p align="center">
 	
 ---
