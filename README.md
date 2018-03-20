@@ -12,6 +12,7 @@ G.A. Tribello, M. Bonomi, D. Branduardi, C. Camilloni, G. Bussi, PLUMED2: New fe
 
 ```
 /msd_map/
+├── plumed.sh
 ├── Example
     ├── plumed-core.dat  --> plumed input file.
     ├── residence.sh     --> bash script.
@@ -64,7 +65,9 @@ In this part the calculation of the distance vectors from the `c2` center to the
 
 The angles between the vector `d12` and vectors `d13` and `d14` are necessary to discriminate among lipid molecules which do not have the proper orientation to be considered binded to the protein interface. To that aim the following formula was used:
 
-`Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$`
+
+<p align="center"><img src='./Figure/CodeEqn.gif' /></p>
+
 
 
 ```javascript
@@ -103,4 +106,8 @@ MATHEVAL ...
 ... MATHEVAL
 ```
 
-```dot3``` and ```dot4``` are the dot products of vector ```d12``` with ```d13``` and  
+`dot3` and `dot4` are the dot products of vector `d12` with `d13`, while `cross3` and `cross4` are the corresponding cross products.
+
+---
+
+The file `plumed.sh`
