@@ -25,6 +25,8 @@ G.A. Tribello, M. Bonomi, D. Branduardi, C. Camilloni, G. Bussi, PLUMED2: New fe
 
 ## PLUMED
 
+### Protein
+
 The file `plumed-core.dat` includes the definition of atoms groups and distance vectors internal to the protein. These CVs will define the position and orientation of the lipid-protein binding interface.
 For a in-deep explanation of this file syntax check the PLUMED [manual](https://plumed.github.io/doc-v2.4/user-doc/html/index.html).
 
@@ -108,6 +110,6 @@ MATHEVAL ...
 
 `dot3` and `dot4` are the dot products of vector `d12` with `d13`, while `cross3` and `cross4` are the corresponding cross products.
 
----
+### Protein - Lipid
 
 The file `plumed.sh`
