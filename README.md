@@ -41,9 +41,11 @@ The variable ```C1``` includes the MARTINI BB beads of residues at the dimerizat
 
 	serial 364 366 367 370 372 806 808 810 813 815
 
-Variable ```C2``` includes a group of atoms colinear along the *x*-axis with ```C1```. The centers of these groups will be used later to define a vector normal to the lipid-protein interface plane.
+Variable ```C2``` includes a group of atoms colinear along the *x*-axis with ```C1```. The centers of these groups will be used later to define a vector normal to the lipid-protein interface plane. The other two variables indicate the limit of the interface along the *y*-axis. 
 
 <p align="center">
   <img src='./Figure/Fig1.png' />
 </p>
 <p align="center">This is a centered caption for the image<p align="center">
+	
+---
