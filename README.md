@@ -46,6 +46,6 @@ Variable ```C2``` includes a group of atoms colinear along the *x*-axis with ```
 <p align="center">
   <img src='./Figure/Fig1.png' />
 </p>
-<p align="center">The shaded circle and the triangle are used just as a reference <p align="center">
+<p align="center">The points, shaded circle, and the triangle are used just as references, they do not correspond to the exact location of the atom group centers, for that use VMD. <p align="center">
 	
 ---
