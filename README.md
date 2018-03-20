@@ -37,8 +37,8 @@ C4: CENTER ATOMS=505-508
 ```
 ---
 
-The variable ```C1``` incudes the MARTINI BB beads of residues at the dimerization interface of the protein used in the [Example](./Example) directory, [CLC-ec1](https://www.rcsb.org/structure/1OTS). To see in VMD use:
+The variable ```C1``` includes the MARTINI BB beads of residues at the dimerization interface of [CLC-ec1](https://www.rcsb.org/structure/1OTS), the protein used in the [Example](./Example) directory. To see in VMD use:
 
 	serial 364 366 367 370 372 806 808 810 813 815
 
-
+Variable ```C2``` includes a group of atoms colinear along the *x*-axis with ```C1```. The centers of these groups will be used later to define a vector normal to the lipid-protein interface plane.
