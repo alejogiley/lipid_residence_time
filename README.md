@@ -37,5 +37,5 @@ C4: CENTER ATOMS=505-508
 ```
 ---
 
-The variable ```C1``` incudes the MARTINI *BB* beads of residues at the dimerization interface of the protein used in the Example directory, [CLC-ec1](https://www.rcsb.org/structure/1OTS). 
+The variable ```C1``` incudes the MARTINI BB beads of residues at the dimerization interface of the protein used in the [Example](./Example) directory, [CLC-ec1](https://www.rcsb.org/structure/1OTS). 
 
