@@ -1,0 +1,51 @@
+WHOLEMOLECULES ENTITY0=364,366,367,370,372,806,808,810,813,815,261,268,270,272,694,696,705,706,708,429-432,505-508
+
+C1: CENTER ATOMS=364,366,367,370,372,806,808,810,813,815 
+C2: CENTER ATOMS=261,268,270,272,694,696,705,706,708     
+C3: CENTER ATOMS=429-432
+C4: CENTER ATOMS=505-508                                   
+
+d12: DISTANCE ATOMS=C2,C1 COMPONENTS
+d13: DISTANCE ATOMS=C2,C3 COMPONENTS
+d14: DISTANCE ATOMS=C2,C4 COMPONENTS
+
+p1: POSITION ATOM=C2 NOPBC
+
+############
+
+MATHEVAL ...
+  LABEL=dot3
+  ARG=d12.x,d12.y,d13.x,d13.y
+  VAR=ax,ay,bx,by
+  FUNC=(ax*bx+ay*by)
+  PERIODIC=NO
+... MATHEVAL
+
+MATHEVAL ...
+  LABEL=dot4
+  ARG=d12.x,d12.y,d14.x,d14.y
+  VAR=ax,ay,bx,by
+  FUNC=(ax*bx+ay*by)
+  PERIODIC=NO
+... MATHEVAL
+
+############
+
+MATHEVAL ...
+  LABEL=cross3
+  ARG=d12.x,d12.y,d13.x,d13.y
+  VAR=ax,ay,bx,by
+  FUNC=sqrt((ax*by-ay*bx)*(ax*by-ay*bx))
+  PERIODIC=NO
+... MATHEVAL
+
+MATHEVAL ...
+  LABEL=cross4
+  ARG=d12.x,d12.y,d14.x,d14.y
+  VAR=ax,ay,bx,by
+  FUNC=sqrt((ax*by-ay*bx)*(ax*by-ay*bx))
+  PERIODIC=NO
+... MATHEVAL
+
+############
+
