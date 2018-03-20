@@ -35,5 +35,7 @@ C2: CENTER ATOMS=261,268,270,272,694,696,705,706,708
 C3: CENTER ATOMS=429-432
 C4: CENTER ATOMS=505-508
 ```
+---
 
+The variable ```C1``` incudes the MARTINI *BB* beads of residues at the dimerization interface of the protein used in the Example directory, [CLC-ec1](https://www.rcsb.org/structure/1OTS). 
 
