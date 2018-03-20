@@ -46,6 +46,6 @@ Variable ```C2``` includes a group of atoms colinear along the *x*-axis with ```
 <p align="center">
   <img src='./Figure/Fig1.png' />
 </p>
-<p align="center">This is a centered caption for the image<p align="center">
+<p align="center">The shaded circle and the triangle are used just as a reference <p align="center">
 	
 ---
