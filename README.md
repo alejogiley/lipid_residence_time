@@ -24,4 +24,16 @@ G.A. Tribello, M. Bonomi, D. Branduardi, C. Camilloni, G. Bussi, PLUMED2: New fe
 
 ## PLUMED
 
-The file ```plumed-core.dat``` includes the
+The file ```plumed-core.dat``` includes the definition of atoms groups and distance vectors internal to the protein. These CVs will define the position and orientation of the lipid-protein binding interface.
+For a in-deep explanation of this file syntax check the [plumed](https://plumed.github.io/doc-v2.4/user-doc/html/index.html) manual.
+
+```javascript
+WHOLEMOLECULES ENTITY0=364,366,367,370,372,806,808,810,813,815,261,268,270,272,694,696,705,706,708,429-432,505-508
+
+C1: CENTER ATOMS=364,366,367,370,372,806,808,810,813,815
+C2: CENTER ATOMS=261,268,270,272,694,696,705,706,708
+C3: CENTER ATOMS=429-432
+C4: CENTER ATOMS=505-508
+```
+
+
