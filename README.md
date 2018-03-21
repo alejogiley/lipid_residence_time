@@ -112,4 +112,6 @@ MATHEVAL ...
 
 ### Protein - Lipid
 
-The file `plumed.sh`
+The file `plumed.sh` creates a PLUMED input file for each lipid molecule, combining the `plumed-core.dat` file with residue-specific variables.
+
+
