@@ -1,28 +1,9 @@
-#POPE
-
-rm COLVAR*
-rm bck.*
-rm \#*
-
-#module load gromacs/5.1.4-openmpi
-export PLUMED_NUM_THREADS=4
-
-for k in {0..9}; do
+echo "RESTART NO" > plumed-tmp0.dat
+echo "INCLUDE FILE=plumed-core.dat" >> plumed-tmp0.dat
 	
-	gmx_mpi trjcat -f ../rep${k}/traj_comp.xtc ../rep${k}/traj_comp.part000?.xtc -o rep${k}_combine.xtc -cat -e 10000000
-	echo 1 0 | gmx_mpi trjconv -f rep${k}_combine.xtc -o rep${k}_combine_pbc.xtc -s ../rep${k}/topol.tpr -n ../new_index.ndx -pbc mol -ur compact -center
-	rm rep${k}_combine.xtc
+##### POPE
 	
-	mkdir COLVAR/rep${k}
-	cd COLVAR/rep${k}/
-	cp ../../plumed-core.dat .
-
-	echo "RESTART NO" > plumed-tmp0.dat
-	echo "INCLUDE FILE=plumed-core.dat" >> plumed-tmp0.dat
-	
-	##### POPE
-	
-	for i in {0..1818..2}; do
+for i in {0..1818..2}; do
 	
 		x=$((i+5))
 		first=$(awk -v i=$i 'BEGIN{print 914+12*i}')
